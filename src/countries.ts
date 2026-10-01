@@ -1,0 +1,87 @@
+/** Lightweight country catalog for MCP (mirrors fauxgen.com coverage). */
+
+export type CountryMeta = {
+  code: string;
+  iso2: string;
+  name: string;
+  /** @faker-js/faker locale key */
+  locale: string;
+  dial: string;
+};
+
+export const COUNTRIES: CountryMeta[] = [
+  { code: "us", iso2: "US", name: "United States", locale: "en_US", dial: "+1" },
+  { code: "gb", iso2: "GB", name: "United Kingdom", locale: "en_GB", dial: "+44" },
+  { code: "ca", iso2: "CA", name: "Canada", locale: "en_CA", dial: "+1" },
+  { code: "au", iso2: "AU", name: "Australia", locale: "en_AU", dial: "+61" },
+  { code: "nz", iso2: "NZ", name: "New Zealand", locale: "en", dial: "+64" },
+  { code: "ie", iso2: "IE", name: "Ireland", locale: "en_IE", dial: "+353" },
+  { code: "in", iso2: "IN", name: "India", locale: "en_IN", dial: "+91" },
+  { code: "pk", iso2: "PK", name: "Pakistan", locale: "ur", dial: "+92" },
+  { code: "ng", iso2: "NG", name: "Nigeria", locale: "en_NG", dial: "+234" },
+  { code: "za", iso2: "ZA", name: "South Africa", locale: "en_ZA", dial: "+27" },
+  { code: "gh", iso2: "GH", name: "Ghana", locale: "en_GH", dial: "+233" },
+  { code: "np", iso2: "NP", name: "Nepal", locale: "en_NP", dial: "+977" },
+  { code: "hk", iso2: "HK", name: "Hong Kong", locale: "en_HK", dial: "+852" },
+  { code: "ph", iso2: "PH", name: "Philippines", locale: "en", dial: "+63" },
+  { code: "de", iso2: "DE", name: "Germany", locale: "de", dial: "+49" },
+  { code: "at", iso2: "AT", name: "Austria", locale: "de_AT", dial: "+43" },
+  { code: "ch", iso2: "CH", name: "Switzerland", locale: "de_CH", dial: "+41" },
+  { code: "fr", iso2: "FR", name: "France", locale: "fr", dial: "+33" },
+  { code: "be", iso2: "BE", name: "Belgium", locale: "nl_BE", dial: "+32" },
+  { code: "lu", iso2: "LU", name: "Luxembourg", locale: "fr_LU", dial: "+352" },
+  { code: "es", iso2: "ES", name: "Spain", locale: "es", dial: "+34" },
+  { code: "mx", iso2: "MX", name: "Mexico", locale: "es_MX", dial: "+52" },
+  { code: "pt", iso2: "PT", name: "Portugal", locale: "pt_PT", dial: "+351" },
+  { code: "br", iso2: "BR", name: "Brazil", locale: "pt_BR", dial: "+55" },
+  { code: "it", iso2: "IT", name: "Italy", locale: "it", dial: "+39" },
+  { code: "nl", iso2: "NL", name: "Netherlands", locale: "nl", dial: "+31" },
+  { code: "ru", iso2: "RU", name: "Russia", locale: "ru", dial: "+7" },
+  { code: "by", iso2: "BY", name: "Belarus", locale: "ru", dial: "+375" },
+  { code: "kz", iso2: "KZ", name: "Kazakhstan", locale: "ru", dial: "+7" },
+  { code: "ua", iso2: "UA", name: "Ukraine", locale: "uk", dial: "+380" },
+  { code: "pl", iso2: "PL", name: "Poland", locale: "pl", dial: "+48" },
+  { code: "cz", iso2: "CZ", name: "Czech Republic", locale: "cs_CZ", dial: "+420" },
+  { code: "sk", iso2: "SK", name: "Slovakia", locale: "sk", dial: "+421" },
+  { code: "hu", iso2: "HU", name: "Hungary", locale: "hu", dial: "+36" },
+  { code: "ro", iso2: "RO", name: "Romania", locale: "ro", dial: "+40" },
+  { code: "md", iso2: "MD", name: "Moldova", locale: "ro_MD", dial: "+373" },
+  { code: "gr", iso2: "GR", name: "Greece", locale: "el", dial: "+30" },
+  { code: "tr", iso2: "TR", name: "Turkey", locale: "tr", dial: "+90" },
+  { code: "hr", iso2: "HR", name: "Croatia", locale: "hr", dial: "+385" },
+  { code: "si", iso2: "SI", name: "Slovenia", locale: "sl_SI", dial: "+386" },
+  { code: "rs", iso2: "RS", name: "Serbia", locale: "sr_RS_latin", dial: "+381" },
+  { code: "mk", iso2: "MK", name: "North Macedonia", locale: "mk", dial: "+389" },
+  { code: "bg", iso2: "BG", name: "Bulgaria", locale: "en", dial: "+359" },
+  { code: "my", iso2: "MY", name: "Malaysia", locale: "en", dial: "+60" },
+  { code: "sg", iso2: "SG", name: "Singapore", locale: "en", dial: "+65" },
+  { code: "se", iso2: "SE", name: "Sweden", locale: "sv", dial: "+46" },
+  { code: "no", iso2: "NO", name: "Norway", locale: "nb_NO", dial: "+47" },
+  { code: "dk", iso2: "DK", name: "Denmark", locale: "da", dial: "+45" },
+  { code: "fi", iso2: "FI", name: "Finland", locale: "fi", dial: "+358" },
+  { code: "lv", iso2: "LV", name: "Latvia", locale: "lv", dial: "+371" },
+  { code: "il", iso2: "IL", name: "Israel", locale: "he", dial: "+972" },
+  { code: "ae", iso2: "AE", name: "United Arab Emirates", locale: "ar", dial: "+971" },
+  { code: "sa", iso2: "SA", name: "Saudi Arabia", locale: "ar", dial: "+966" },
+  { code: "eg", iso2: "EG", name: "Egypt", locale: "ar", dial: "+20" },
+  { code: "ir", iso2: "IR", name: "Iran", locale: "fa", dial: "+98" },
+  { code: "am", iso2: "AM", name: "Armenia", locale: "hy", dial: "+374" },
+  { code: "ge", iso2: "GE", name: "Georgia", locale: "ka_GE", dial: "+995" },
+  { code: "az", iso2: "AZ", name: "Azerbaijan", locale: "az", dial: "+994" },
+  { code: "jp", iso2: "JP", name: "Japan", locale: "ja", dial: "+81" },
+  { code: "kr", iso2: "KR", name: "South Korea", locale: "ko", dial: "+82" },
+  { code: "cn", iso2: "CN", name: "China", locale: "zh_CN", dial: "+86" },
+  { code: "tw", iso2: "TW", name: "Taiwan", locale: "zh_TW", dial: "+886" },
+  { code: "th", iso2: "TH", name: "Thailand", locale: "th", dial: "+66" },
+  { code: "vn", iso2: "VN", name: "Vietnam", locale: "vi", dial: "+84" },
+  { code: "id", iso2: "ID", name: "Indonesia", locale: "id_ID", dial: "+62" },
+  { code: "sn", iso2: "SN", name: "Senegal", locale: "fr_SN", dial: "+221" },
+];
+
+const BY_CODE = new Map(COUNTRIES.map((c) => [c.code, c]));
+
+export function countryOf(code: string): CountryMeta {
+  return BY_CODE.get(code.toLowerCase()) ?? BY_CODE.get("us")!;
+}
+
+export const COUNTRY_CODES = COUNTRIES.map((c) => c.code);
