@@ -1,5 +1,5 @@
 {
-  "name": "@fauxgen/mcp",
+  "name": "fauxgen-mcp",
   "version": "0.1.0",
   "description": "FauxGen MCP server — generate fake identities, addresses, phones, test cards and more for Cursor, Claude, and any MCP host.",
   "type": "module",
@@ -25,13 +25,13 @@
     "fauxgen"
   ],
   "bin": {
-    "fauxgen-mcp": "./bin/fauxgen-mcp.js"
+    "fauxgen-mcp": "./cli.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "bin",
+    "cli.js",
     "README.md",
     "LICENSE"
   ],

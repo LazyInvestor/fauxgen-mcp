@@ -1,4 +1,4 @@
-# @fauxgen/mcp
+# fauxgen-mcp
 
 <p align="center">
   <img src="https://fauxgen.com/logo.png" width="72" height="72" alt="FauxGen" />
@@ -12,10 +12,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@fauxgen/mcp"><img alt="npm" src="https://img.shields.io/npm/v/@fauxgen/mcp?color=22d3ee&label=npm" /></a>
+  <a href="https://www.npmjs.com/package/fauxgen-mcp"><img alt="npm" src="https://img.shields.io/npm/v/fauxgen-mcp?color=22d3ee&label=npm" /></a>
   <a href="https://fauxgen.com/mcp"><img alt="docs" src="https://img.shields.io/badge/docs-fauxgen.com%2Fmcp-22d3ee" /></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-blue" /></a>
-  <a href="https://modelcontextprotocol.io"><img alt="mcp" src="https://img.shields.io/badge/MCP-stdio-111827?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzIyZDNlZSIgZD0iTTQgNGg2djZINHptMTAgMGg2djZoLTZ6TTQgMTRoNnY2SDR6bTEwIDBoNnY2aC02eiIvPjwvc3ZnPg==" /></a>
+  <a href="https://modelcontextprotocol.io"><img alt="mcp" src="https://img.shields.io/badge/MCP-stdio-111827" /></a>
 </p>
 
 ---
@@ -41,13 +41,11 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
   "mcpServers": {
     "fauxgen": {
       "command": "npx",
-      "args": ["-y", "github:LazyInvestor/fauxgen-mcp"]
+      "args": ["-y", "fauxgen-mcp"]
     }
   }
 }
 ```
-
-After the package is on npm you can use `"args": ["-y", "@fauxgen/mcp"]` instead.
 
 ### Claude Desktop
 
@@ -58,34 +56,16 @@ After the package is on npm you can use `"args": ["-y", "@fauxgen/mcp"]` instead
   "mcpServers": {
     "fauxgen": {
       "command": "npx",
-      "args": ["-y", "github:LazyInvestor/fauxgen-mcp"]
+      "args": ["-y", "fauxgen-mcp"]
     }
   }
 }
 ```
 
-### Claude Code / other MCP hosts
+### CLI
 
 ```bash
-npx -y github:LazyInvestor/fauxgen-mcp
-```
-
-Or pin a local build:
-
-```bash
-git clone https://github.com/LazyInvestor/fauxgen-mcp.git
-cd fauxgen-mcp && npm i && npm run build
-```
-
-```json
-{
-  "mcpServers": {
-    "fauxgen": {
-      "command": "node",
-      "args": ["/absolute/path/to/fauxgen-mcp/dist/index.js"]
-    }
-  }
-}
+npx -y fauxgen-mcp
 ```
 
 ## Tools
@@ -107,27 +87,6 @@ Also ships a `seed_test_user` prompt and a `fauxgen://overview` resource.
 
 **66 countries** — same coverage as the website.
 
-## Example
-
-```json
-{
-  "name": { "full": "Anna Keller", "gender": "female" },
-  "address": {
-    "street": "Hauptstraße 12",
-    "city": "München",
-    "postal": "80331",
-    "country": "Germany"
-  },
-  "phone": { "international": "+49 151 2345678" },
-  "online": { "email": "anna.keller@example.com" },
-  "web": "https://fauxgen.com/tools/fake-identity-generator/de"
-}
-```
-
-## What stays on the website
-
-Chat screenshot makers (WhatsApp / iMessage / Telegram), license-plate images, barcodes and AI faces need a browser. Use `fauxgen_tool_url` or open [fauxgen.com](https://fauxgen.com).
-
 ## Safety
 
 All output is **fictional test data**. Do not use it to deceive people, open real accounts, or commit fraud. Test cards and IBANs pass checksums so your validators work — they are not real payment instruments.
@@ -137,7 +96,7 @@ All output is **fictional test data**. Do not use it to deceive people, open rea
 ```bash
 npm install
 npm run build
-npm start          # stdio MCP server
+npm start
 npm run typecheck
 ```
 
