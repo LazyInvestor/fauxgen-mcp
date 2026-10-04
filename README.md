@@ -18,6 +18,18 @@
   <a href="https://modelcontextprotocol.io"><img alt="mcp" src="https://img.shields.io/badge/MCP-stdio-111827" /></a>
 </p>
 
+<p align="center">
+  <a href="https://glama.ai/mcp/servers/LazyInvestor/fauxgen-mcp">
+    <img alt="FauxGen MCP MCP server – quality and maintenance score on Glama" src="https://glama.ai/mcp/servers/LazyInvestor/fauxgen-mcp/badges/card.svg" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://glama.ai/mcp/servers/LazyInvestor/fauxgen-mcp">
+    <img alt="FauxGen MCP MCP server – quality and maintenance score on Glama" src="https://glama.ai/mcp/servers/LazyInvestor/fauxgen-mcp/badges/score.svg" />
+  </a>
+</p>
+
 ---
 
 ## Why
